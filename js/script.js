@@ -106,6 +106,15 @@ more.addEventListener('click', () =>{
       },10)
       bindNewModal(card);
   }
+  if (night === true) {
+    document.querySelectorAll('.videos__item-descr').forEach(item => {
+      item.style.color = '#fff';
+      });
+    
+      document.querySelectorAll('.videos__item-views').forEach(item => {
+        item.style.color = '#fff';
+        });
+  }
    sliceTitel('.videos__item-descr', 99);
 });
 
